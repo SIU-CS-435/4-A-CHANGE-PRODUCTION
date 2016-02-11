@@ -4,11 +4,6 @@ Increasingly developed social sharing website, allow users to create, share, ann
 POOJITHA DASARI
 poojitha.dasari@siu.edu
 SIU853637939
-<<<<<<< HEAD
 RISHITHA NIMMAGADDA
 rishitha@siu.edu
 SIU853634939
->>>>>>> e2b696ecf78b684b5c4acec1946a6bbbf79b008e
-=======
-siu
->>>>>>> c6738edf68949f7c35e031f88db2efe357aca84f
