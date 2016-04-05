@@ -2,13 +2,30 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Project</title>
+    <title>User Page</title>
+    <style type="text/css">
+        #topf{
+            margin-top:0px;
+         
+            overflow-y: hidden;
+            
+            
+            height: 60px;
+
+
+        }
+        #bottom{
+             padding-top: 0px;
+            overflow-y: hidden;
+        }
+    </style>
 </head>
-<frameset rows="17%,*" border=0>
+<frameset rows="13%,10%,77%" border=0 id="topf">
 <frame src="top.htm" scrolling=no></frame>
-<frameset cols="30%,70%">
-<frame src="coptions.aspx"></frame>
-<frame src="main.htm" name="main"></frame>
-</frameset>
+ <frame src="coptions.aspx" scrolling=no></frame>
+    <frameset cols="100%" id="bottom">
+
+        <frame src="main.htm" name="main"></frame>
+    </frameset>
 </frameset>
 </html>
