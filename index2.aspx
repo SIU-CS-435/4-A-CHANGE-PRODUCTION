@@ -162,7 +162,7 @@ top:250px;
              <td class="auto-style2" style="font-size: x-large; font-weight: bolder; font-style: normal;">
                  User ID</td></tr>
           <tr>   <td class="auto-style3">
-                    <asp:TextBox ID="TextBox1" runat="server" style="border-radius:5px;" Height="34px" Width="230px" font-size="18px" placeholder="Enter User ID"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" style="border-radius:5px;" Height="34px" Width="230px" font-size="18px" Autocomplete="off" placeholder="Enter User ID"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" 
                         ControlToValidate="TextBox1" ErrorMessage="*" ></asp:RequiredFieldValidator>
                 </td></tr>
