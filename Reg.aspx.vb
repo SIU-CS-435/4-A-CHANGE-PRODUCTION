@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient
 Partial Class Reg
     Inherits System.Web.UI.Page
-    Dim con As New SqlConnection("data source=localhost;initial catalog=pis;user id=sa;password=database")
+    Dim con As New SqlConnection("data source=localhost;initial catalog=pis;user id=sa;password=sa")
     Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
         If IsDate(TextBox5.Text) Then
             'If DateDiff(DateInterval.Year, CDate(TextBox5.Text), Date.Today) >= 18 Then
@@ -30,7 +30,7 @@ Partial Class Reg
 
                 Label5.Text = "Customer Registered Successfully with ID Click to<a href='index2.aspx'> Login</a> " & nsno
             Catch ex As Exception
-                Label5.Text = "Customer With this ID already exists! Try Another." & ex.Message()
+                Label5.Text = "Customer already exists! ."
             End Try
             con.Close()
             TextBox1.Text = ""
@@ -42,7 +42,7 @@ Partial Class Reg
             ' Label5.Text = "You should be 18 years to register."
             'End If
         Else
-            Label5.Text = "Invalid Date of birth."
+            Label5.Text = "Registration Date Required. Please Reload !!!!"
         End If
     End Sub
 
