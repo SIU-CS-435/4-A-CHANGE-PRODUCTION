@@ -80,7 +80,7 @@
     </style>
 </head>
 <body >
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" autocomplete="off">
    
             <div class="style1" ">
                 <h1>CUSTOMER REGISTRATION FORM</h1></div>
@@ -88,7 +88,7 @@
         <table class="stylet" style="width:40%; height: 480px; margin-left: 450px; margin-top:-65px; ">
         <tr>
             <td class="auto-style1" style="font-size: x-large; font-weight: bold">
-                <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Customer Name  "></asp:Label>
+                <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Customer Name " autocomplete="off"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TextBox1" runat="server" placeholder="Ex: JOHN"></asp:TextBox>
@@ -112,7 +112,7 @@
         <tr>
             <td class="auto-style1" style="font-size: x-large; font-weight: bold">
                 <br />
-                <asp:Label ID="Label3" runat="server" Font-Size="x-Large" Text="E-Mail ID"></asp:Label>
+                <asp:Label ID="Label3" runat="server" Font-Size="x-Large" autocomplete="off" Text="E-Mail ID"></asp:Label>
             </td>
             <td>
                <asp:TextBox ID="TextBox3" runat="server" placeholder="EX.JOHN@GMAIL.COM"></asp:TextBox>
