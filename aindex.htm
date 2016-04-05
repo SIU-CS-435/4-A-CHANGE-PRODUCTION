@@ -2,14 +2,33 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Project</title>
+    <title>Admin page</title>
+    <style type="text/css">
+        #topf {
+            margin-top:0px;
+         
+            overflow-y: hidden;
+            
+            
+            height: 30px;
+        }
+      
+
+        #bottom {
+       
+            padding-top: 0px;
+            overflow-y: hidden;
+        }
+    </style>
+
 </head>
-<frameset rows="17%,*" border=0>
-<frame src="top.htm" scrolling=no></frame>
-<frameset cols="30%,*">
-<frame src="aoptions.aspx"></frame>
-<frame src="main.htm" name="main"></frame>
-</frameset>
+<frameset rows="13%,10%,77%" border=0 id="topf">
+    <frame src="atop.html" scrolling=no></frame>
+    <frame src="aoptions.aspx" scrolling=no ></frame>
+    <frameset cols="100">
+
+        <frame src="main.htm" name="main" id="bottom"></frame>
+    </frameset>
 </frameset>
 
 </html>
