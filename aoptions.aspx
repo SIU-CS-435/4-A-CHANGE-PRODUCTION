@@ -3,83 +3,80 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title>Admin Page</title>
     <style type="text/css">
-        .style1
-        {
-            color: #CC0000;
+         ul {
+    list-style-type: none;
+    margin: -5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-top:-13px;
+    margin-left:-8px;
+    width:1366px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    font-family:'Comic Sans MS';
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:26px;
+}
+
+
+        li a:hover {
+            background-color: #00ff21;
         }
-        .auto-style1 {
-            height: 26px;
+
+li a:visited {
+    background-color: #00ff21;
+}
+#home
+{
+    cursor:default;
+}
+
+#log{
+    text-align:end;
+    
+}
+
+        #l {
+            margin-left: 240px;
+            padding-left:75px;
+            
         }
     </style>
 </head>
-<body background="images/b10.jpg" style="background-repeat: no-repeat;">
+<body >
     <form id="form1" runat="server">
-    <b style="font-size: x-large; font-weight: bolder">Welcome <span class="style1" style="font-size: x-large; font-weight: bolder">Administrator!</span></b>
-    <hr />
-    <table 
-        style="width:100%;">
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="cpwd.aspx" 
-                    Target="main">Change Password</asp:HyperLink>
-            &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/UploadFile.aspx" 
-                    Target="main">Upload Images</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/RemvImgs.aspx" 
-                    Target="main">Remove Images</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td class="auto-style1" style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ViewImgs.aspx" 
-                    Target="main">View Images</asp:HyperLink>
-            </td>
-            <td class="auto-style1" style="font-size: large; font-weight: bold">
-                </td>
-            <td class="auto-style1" style="font-size: large; font-weight: bold">
-                </td>
-        </tr>
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="index2.aspx" 
-                    Target="_top">Logout</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table><p></p>
-    &nbsp;</form>
+   <ul>
+               <li> <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="main.htm" 
+                    Target="main">Home</asp:HyperLink></li>
+
+               <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="cpswd.aspx" 
+                    Target="main">Change Password</asp:HyperLink></li>
+            
+               <li> <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/UploadFile.aspx" 
+                    Target="main">Upload Images</asp:HyperLink></li>
+            
+               <li> <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/RemvImgs.aspx" 
+                    Target="main">Remove Images</asp:HyperLink></li>
+           
+              <li>  <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ViewImgs.aspx" 
+                    Target="main">View Images</asp:HyperLink></li>
+           
+                <li><asp:HyperLink ID="l" runat="server" NavigateUrl="index2.aspx" 
+                    Target="_top">Logout</asp:HyperLink></li>
+          </ul>
+   </form>
 </body>
 </html>
