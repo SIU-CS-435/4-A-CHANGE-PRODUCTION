@@ -3,61 +3,74 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head id="Head1" runat="server">
     <title>Customer Page</title>
-    <style type="text/css">
-        .style1
-        {
-            color: #CC0000;
-        }
+   <style type="text/css">
+         ul {
+    list-style-type: none;
+    margin: -5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-top:-9px;
+    margin-left:-8px;
+    width:1366px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    font-family:'Comic Sans MS';
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size:26px;
+}
+
+li a:hover {
+    background-color: #00ff21;
+}
+#home
+{
+    cursor:default;
+}
+
+#log{
+    text-align:end;
+    margin-left:1220px;
+}
+
+#l{
+    margin-left: 635px;
+            padding-left:75px;
+}
+
     </style>
 </head>
-<body background="images/p6.jpg" style="background-repeat: no-repeat;">
+<body>
     <form id="form1" runat="server">
-    <b style="font-size: x-large; font-weight: bold">Welcome <span class="style1" style="font-size: x-large; font-weight: bold">Customer!</span></b>
-    <hr />
-    <table 
-        style="width:100%;">
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="cpwd.aspx" 
-                    Target="main">Change Password</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/SearchImgs.aspx" 
-                    Target="main">Search Images</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td style="font-size: xx-large; font-weight: bold">
-                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="index2.aspx" 
-                    Target="_top">Logout</asp:HyperLink>
-            </td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-        <tr>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-        </tr>
-    </table>
+   
+    <ul>
+        
+            <li> <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="main.htm" 
+                    Target="main">Home</asp:HyperLink></li>
+
+               <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="cpswd.aspx" 
+                    Target="main">Change Password</asp:HyperLink></li>
+           
+            
+              <li>  <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/SearchImgs.aspx" 
+                    Target="main">Search Images</asp:HyperLink></li>
+           
+            
+             <li>   <asp:HyperLink ID="l" runat="server" NavigateUrl="index2.aspx" 
+                    Target="_top">Logout</asp:HyperLink></li>
+          
+             </ul>
     </form>
-</body><p></p><p></p><br /><br />
-    &nbsp;&nbsp;&nbsp;
+</body>
 </html>
