@@ -24,7 +24,7 @@
             width: 189px;
         }
 
-        #TextBox1, #TextBox3, #TextBox4, #TextBox5, #DropDownList1 {
+        #TextBox1, #TextBox3, #TextBox4, #TextBox5 {
             background: white;
             border: 2px;
             border-color: #585858;
@@ -35,7 +35,7 @@
             font-family: 'Comic Sans MS';
             outline: none;
             ;
-            height: 34px;
+            height: 32px;
             width: 350px;
         }
 
@@ -49,9 +49,7 @@
             font-size: large;
             box-shadow: 3px 3px 2px #585858;
             margin-left: 53px;
-            height: 40px;
-            width: 86px;
-        }
+            }
 
             #Button1:hover {
                 background-color: green;
@@ -75,7 +73,7 @@
     <div class="style1" ">
                 <h1>CUSTOMER REGISTRATION FORM</h1></div>
       
-        <table class="stylet" style="width:40%; height: 564px; margin-left: 450px; margin-top:-65px; ">
+        <table class="stylet" style="width:40%; height: 468px; margin-left: 450px; margin-top:-100px; ">
         <tr>
             <td class="auto-style1" style="font-size: x-large; font-weight: bold">
                 <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Customer Name " autocomplete="off"></asp:Label>
@@ -104,11 +102,7 @@
             <td class="auto-style1" style="font-size: x-large; font-weight: bold">
                 <br />
                 <asp:Label ID="Label3" runat="server" Font-Size="x-Large" autocomplete="off" Text="E-Mail ID"></asp:Label>
-<<<<<<< HEAD
         </td>
-=======
-            </td>
->>>>>>> refs/remotes/origin/master
             <td>
                <asp:TextBox ID="TextBox3" runat="server" placeholder="EX.JOHN@GMAIL.COM"></asp:TextBox>
                      &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" 
@@ -150,7 +144,7 @@
                 
                 <td>
                 <asp:DropDownList ID="DropDownList1" runat="server"
-                                  AppendDataBoundItems="true">
+                                  AppendDataBoundItems="true" Height="26px" Width="108px">
                 <asp:ListItem Value="-1">Select</asp:ListItem>
                 <asp:ListItem>Male</asp:ListItem>
                 <asp:ListItem>Female</asp:ListItem>
@@ -159,14 +153,15 @@
             </tr>
 <tr>
     <br />
+   
             <td>
                 
                 
-        <asp:Button ID="Button1" runat="server" Text="Register" Height="40px" Width="86px" />
+        <asp:Button ID="Button1" runat="server" Text="Register" Height="42px" Width="86px" />
                 
                 </td>
                 <td>
-                <asp:Button ID="Button2" runat="server"  Text="Clear" Height="40px" Width="86px"/>
+                <asp:Button ID="Button2" runat="server"  Text="Clear" Height="42px" Width="86px"/>
                 
             </td>
    </tr>
