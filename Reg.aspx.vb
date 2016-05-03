@@ -37,6 +37,7 @@ Partial Class Reg
             TextBox2.Text = ""
             TextBox3.Text = ""
             TextBox5.Text = ""
+	    DropDownList1.SelectedIndex = 0
 
             'Else
             ' Label5.Text = "You should be 18 years to register."
