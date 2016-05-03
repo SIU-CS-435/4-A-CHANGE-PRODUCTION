@@ -74,7 +74,7 @@ li a:visited {
               <li>  <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ViewImgs.aspx" 
                     Target="main">View Images</asp:HyperLink></li>
            
-                <li><asp:HyperLink ID="l" runat="server" NavigateUrl="index2.aspx" 
+                <li><asp:HyperLink ID="l" runat="server" NavigateUrl="index2.aspx" onclick="return confirm('Are you sure you want to Logout?')" 
                     Target="_top">Logout</asp:HyperLink></li>
           </ul>
    </form>
