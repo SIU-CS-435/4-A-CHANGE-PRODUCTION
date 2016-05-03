@@ -5,72 +5,75 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <title>Customer Page</title>
-   <style type="text/css">
-         ul {
-    list-style-type: none;
-    margin: -5px;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-    margin-top:-9px;
-    margin-left:-8px;
-    width:1366px;
-}
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            margin: -5px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            margin-top: -9px;
+            margin-left: -8px;
+            width: 1366px;
+        }
 
-li {
-    float: left;
-}
+        li {
+            float: left;
+        }
 
-li a {
-    display: inline-block;
-    color: white;
-    font-family:'Comic Sans MS';
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size:26px;
-}
+            li a {
+                display: inline-block;
+                color: white;
+                font-family: 'Comic Sans MS';
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 26px;
+            }
 
-li a:hover {
-    background-color: #00ff21;
-}
-#home
-{
-    cursor:default;
-}
+                li a:hover {
+                    background-color: #00ff21;
+                }
 
-#log{
-    text-align:end;
-    margin-left:1220px;
-}
+        #home {
+            cursor: default;
+        }
 
-#l{
-    margin-left: 635px;
-            padding-left:75px;
-}
+        #log {
+            text-align: end;
+            margin-left: 1220px;
+        }
 
+        #l {
+            margin-left: 635px;
+            padding-left: 75px;
+        }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-   
-    <ul>
-        
-            <li> <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="main.htm" 
+
+        <ul>
+
+            <li>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="main.htm"
                     Target="main">Home</asp:HyperLink></li>
 
-               <li> <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="cpswd.aspx" 
+            <li>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="cpswd.aspx"
                     Target="main">Change Password</asp:HyperLink></li>
-           
-            
-              <li>  <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/SearchImgs.aspx" 
+
+
+            <li>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/SearchImgs.aspx"
                     Target="main">Search Images</asp:HyperLink></li>
-           
-            
-             <li>   <asp:HyperLink ID="l" runat="server" NavigateUrl="index2.aspx" 
+
+
+            <li>
+                <asp:HyperLink ID="l" runat="server" NavigateUrl="index2.aspx" onclick="return confirm('Are you sure you want to Logout?')" 
                     Target="_top">Logout</asp:HyperLink></li>
-          
-             </ul>
+
+        </ul>
     </form>
 </body>
 </html>
